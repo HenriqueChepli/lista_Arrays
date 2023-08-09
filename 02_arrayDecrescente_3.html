@@ -4,11 +4,48 @@
     //Retorne os elementos do array, separando-os por hífen (n1 - n2 - n3).
 
     //ENTRADA
-
+    const numero = Number(prompt(`Informe um numero.`));
+    const numero2 = Number(prompt(`Informe um numero.`));
+    const numero3 = Number(prompt(`Informe um numero.`));
 
     //PROCESSAMENTO
+    let lista = [];
 
+    if (numero > numero2 && numero > numero3) {
+        if (numero2 > numero3) {
+            lista = [numero, numero2, numero3].join(" - ")
+            alert(`${lista}`)
+        }
+        else {
+            lista = [numero, numero3, numero2].join(" - ")
+            alert(`${lista}`)
+        }
+    }
 
+    else if (numero3 > numero2 && numero3 > numero) {
+        if (numero2 > numero) {
+            lista = [numero3, numero2, numero].join(" - ")
+            alert(`${lista}`)
+        }
+        else {
+            lista = [numero3, numero, numero2].join(" - ")
+            alert(`${lista}`)
+        }
+    }
+
+    else if (numero2 > numero && numero2 > numero3) {
+        if (numero3 > numero) {
+            lista = [numero2, numero3, numero].join(" - ")
+            alert(`${lista}`)
+        }
+        else {
+            lista = [numero2, numero, numero3].join(" - ")
+            alert(`${lista}`)
+        }
+    }
+    else {
+        alert(`Valor invalido.`);
+    }
     //SAÍDA
 
 </script>

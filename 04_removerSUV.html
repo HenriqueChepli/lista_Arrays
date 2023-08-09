@@ -6,10 +6,12 @@
     //Apresente a lista antiga de SUVs e a nova lista, após a remoção do veículo solicitado.
 
     //ENTRADA
-
+    const remove = prompt(`Qual voce quer remover? (Digite "0" para Tiggo, "1" para Sportage, "2" para Tucson e "3" para EcoSport)`);
 
     //PROCESSAMENTO
-
+    let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"].join(" - ");
+    alert(`${carrosSUV.slice(remove)}`);
+    alert(`${carrosSUV}`);
 
     //SAÍDA
 

@@ -10,12 +10,50 @@
     //Apresente a lista final de cada tipo de veículo.
 
     //ENTRADA
+    const car = prompt(`Informe um veículo para adicionar a nova lista`);
+    const identificar = Number(prompt(`Informe o tipo do carro (SUV-1) (SEDAN-2) (HATCH-3)`));
+    const car2 = prompt(`Informe um veículo para adicionar a nova lista`);
+    const identificar2 = Number(prompt(`Informe o tipo do carro (SUV-1) (SEDAN-2) (HATCH-3)`));
+    const car3 = prompt(`Informe um veículo para adicionar a nova lista`);
+    const identificar3 = Number(prompt(`Informe o tipo do carro (SUV-1) (SEDAN-2) (HATCH-3)`));
+
 
 
     //PROCESSAMENTO
     let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
-    let cassosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
+    let carrosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
     let carrosHatch = ["308", "Focus", "i30"];
+
+    switch (identificar) {
+        case 1: carrosSUV.push(car)
+            break;
+        
+        case 2 : carrosSedan.push(car)
+            break;
+        case 3 : carrosHatch.push(car)
+        break;
+    }
+    switch (identificar2) {
+        case 1: carrosSUV.push(car2)
+            break;
+        
+        case 2 : carrosSedan.push(car2)
+            break;
+        case 3 : carrosHatch.push(car2)
+        break;
+    }
+    switch (identificar3) {
+        case 1: carrosSUV.push(car3)
+            break;
+        
+        case 2 : carrosSedan.push(car3)
+            break;
+        case 3 : carrosHatch.push(car3)
+        break;
+    }
+    alert(`As listas são:\n${carrosSUV}\n ${carrosSedan}\n ${carrosHatch}.`);
+
+   
 
     //SAÍDA
 

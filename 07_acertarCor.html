@@ -10,11 +10,17 @@
     //NÃO FOI DESSA VEZ... TENTE NOVAMENTE!
 
     //ENTRADA
-
+    const cor = prompt(`Escolha uma cor: "0-azul", "1-amarelo", "2-verde", "3-branco", "4-preto", "5-marrom", "6-cinza"`);
 
     //PROCESSAMENTO
     const nomeCores = ["azul", "amarelo", "verde", "branco", "preto", "marrom", "cinza"];
+    const aleat =  Math.floor(Math.random(nomeCores) * 7);
+    const corInf = nomeCores.splice(aleat, 1)
 
+    if(cor == aleat){
+        alert(`PARABÉNS! VOCÊ ESTÁ COM SORTE NA COR ${corInf}`)
+    }
+    else{alert(`NÃO FOI DESSA VEZ... TENTE NOVAMENTE!`)};
     //SAÍDA
 
 

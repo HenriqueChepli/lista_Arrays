@@ -5,13 +5,15 @@
     //Pergunte ao usuário qual carro deseja ADICIONAR na lista.
     //Apresente a lista antiga de SUVs e a nova lista, após a adição do veículo solicitado.
 
-    //ENTRADA
-    alert(`${carrosSUV}`)
-    const remove = prompt(`Qual voce quer remover?`);
+   //ENTRADA
+    const carro = prompt(`Qual carro deseja adicionar a lista?`).toUpperCase()
 
     //PROCESSAMENTO
-    let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    let carrosSuv = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    alert(`A lista antiga é ${carrosSuv.join(", ")}.`);
+    carrosSuv.push(add)
 
     //SAÍDA
+    alert(`Essa é a nova lista: ${carrosSuv.join(", ")}.`)
 
 </script>
